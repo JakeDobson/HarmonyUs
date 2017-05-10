@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HarmonyUS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="self.view">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="R.E.M._-_Document" translatesAutoresizingMaskIntoConstraints="NO" id="Bph-4o-rFk" userLabel="bgImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFl-DM-PnA" userLabel="SongInfoView">
+                                <rect key="frame" x="8" y="20" width="304" height="138"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDB-TX-Js3" userLabel="songTitleTextView">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="Ssk-Km-C7w"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="It's the End of the World As We Know It (And I Feel Fine)">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="24" name="GillSans-SemiBold"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" lineHeightMultiple="0.75" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R.E.M." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vx0-DE-9Gw" userLabel="artistLabel">
+                                        <rect key="frame" x="0.0" y="74" width="304" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="AvB-pm-kPv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hed-8Q-fp5" userLabel="albumLabel">
+                                        <rect key="frame" x="0.0" y="102" width="304" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="cpO-BO-P7S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hed-8Q-fp5" firstAttribute="leading" secondItem="GFl-DM-PnA" secondAttribute="leading" id="2B2-Vm-zei"/>
+                                    <constraint firstItem="mDB-TX-Js3" firstAttribute="top" secondItem="GFl-DM-PnA" secondAttribute="top" id="AQV-rj-cWG"/>
+                                    <constraint firstItem="vx0-DE-9Gw" firstAttribute="leading" secondItem="GFl-DM-PnA" secondAttribute="leading" id="CcD-EJ-t2P"/>
+                                    <constraint firstItem="vx0-DE-9Gw" firstAttribute="top" secondItem="mDB-TX-Js3" secondAttribute="bottom" constant="-8" id="Kuk-SV-U8Z"/>
+                                    <constraint firstItem="Hed-8Q-fp5" firstAttribute="top" secondItem="vx0-DE-9Gw" secondAttribute="bottom" constant="4" id="ME0-zB-rEW"/>
+                                    <constraint firstItem="mDB-TX-Js3" firstAttribute="leading" secondItem="GFl-DM-PnA" secondAttribute="leading" id="Spb-IK-AwK"/>
+                                    <constraint firstAttribute="trailing" secondItem="vx0-DE-9Gw" secondAttribute="trailing" id="hCy-Lw-mVP"/>
+                                    <constraint firstAttribute="height" constant="138" id="hra-gj-ocN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hed-8Q-fp5" secondAttribute="bottom" constant="12" id="mNN-fI-Wsb"/>
+                                    <constraint firstAttribute="trailing" secondItem="mDB-TX-Js3" secondAttribute="trailing" id="n1g-b1-KP0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hed-8Q-fp5" secondAttribute="trailing" id="y5n-nM-kSU"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="R.E.M._-_Document" translatesAutoresizingMaskIntoConstraints="NO" id="OpH-sT-fSm" userLabel="albumImageView">
+                                <rect key="frame" x="8" y="154" width="304" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OpH-sT-fSm" secondAttribute="height" multiplier="1:1" id="ige-ei-EWR"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nB3-Ng-EGi">
+                                <rect key="frame" x="8" y="496" width="304" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxg-IF-E0z" userLabel="backButton">
+                                        <rect key="frame" x="0.0" y="7" width="101.5" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="Rewind"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwl-uq-B8I" userLabel="playPauseButton">
+                                        <rect key="frame" x="101.5" y="7" width="101" height="50"/>
+                                        <state key="normal" image="Play"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgC-iN-OLd" userLabel="forwardButton">
+                                        <rect key="frame" x="202.5" y="7" width="101.5" height="50"/>
+                                        <state key="normal" image="Forward"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="E1H-xJ-oXY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bph-4o-rFk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1XK-rU-Rsf"/>
+                            <constraint firstItem="GFl-DM-PnA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="6Uo-1b-Hs1"/>
+                            <constraint firstItem="nB3-Ng-EGi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OpH-sT-fSm" secondAttribute="bottom" constant="8" id="7N9-ZN-9LA"/>
+                            <constraint firstAttribute="trailing" secondItem="Bph-4o-rFk" secondAttribute="trailing" id="LsP-cW-S3c"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bph-4o-rFk" secondAttribute="bottom" id="Sop-j3-X79"/>
+                            <constraint firstItem="Bph-4o-rFk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bUm-fj-OV9"/>
+                            <constraint firstItem="OpH-sT-fSm" firstAttribute="top" secondItem="GFl-DM-PnA" secondAttribute="bottom" constant="-4" id="jya-Jl-a9M"/>
+                            <constraint firstItem="nB3-Ng-EGi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="mjN-ox-zZd"/>
+                            <constraint firstAttribute="trailing" secondItem="GFl-DM-PnA" secondAttribute="trailing" constant="8" id="nlp-RS-SOA"/>
+                            <constraint firstItem="OpH-sT-fSm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="sCT-76-5U8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nB3-Ng-EGi" secondAttribute="bottom" constant="8" id="szw-aA-Aqt"/>
+                            <constraint firstItem="GFl-DM-PnA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wEJ-8x-Vnr"/>
+                            <constraint firstItem="OpH-sT-fSm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xsw-D7-1l4"/>
+                            <constraint firstAttribute="trailing" secondItem="nB3-Ng-EGi" secondAttribute="trailing" constant="8" id="yxc-3e-Ldu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="OpH-sT-fSm" id="teS-gs-Uil"/>
+                        <outlet property="bgImageView" destination="Bph-4o-rFk" id="TBb-IQ-mFu"/>
+                        <outlet property="songTitleTextView" destination="mDB-TX-Js3" id="L3m-MC-vt9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Forward" width="50" height="50"/>
+        <image name="Play" width="50" height="50"/>
+        <image name="R.E.M._-_Document" width="300" height="300"/>
+        <image name="Rewind" width="50" height="50"/>
+    </resources>
+</document>
