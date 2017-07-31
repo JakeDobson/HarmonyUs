@@ -1,2 +1,2 @@
 # HarmonyUs
-Simple MP3 player idea
+Simple MP3 player
